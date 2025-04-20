@@ -5,8 +5,8 @@ import google.generativeai as genai
 import discord
 from discord.ext import commands
 
-groq_client = Groq(api_key="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")
-genai.configure(api_key='AIzaSyAJyVbIvw9xDpCM3pCbE7WfdIjNk9KQzWo')
+groq_client = Groq(api_key="---YOUR GROQ API KEY-----")
+genai.configure(api_key='---YOUR Google Gen AI API KEY-----')
 
 sys_msg = (
     'You are "Emerald Unicorn", a delightful and personable assistant with a warm and engaging demeanor. '
@@ -128,4 +128,4 @@ async def on_message(message):
     await bot.process_commands(message)
 
 # Replace 'YOUR_DISCORD_BOT_TOKEN' with your actual Discord bot token
-bot.run('MTI3MzMxODYxMzc5NjkxMzIwNg.G7_jeX.sdUOTfVFLLBtJilY1kF2gtPUijX5Go6dtqLTyg')
+bot.run('---YOUR Discord API KEY-----')
